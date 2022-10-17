@@ -17,9 +17,5 @@ export const ButtonContainer = styled.button<ButtonProps>`
   width: 100px;
   height: 40px;
 
-  ${({ variant }) => {
-    return css`
-      background-color: ${buttonVariants[variant]}
-    `
-  }}
+  background-color: ${({ theme }) => theme.primary};
 `
